@@ -18,6 +18,7 @@ const generalColor = "white";
 function navHeaderScroll() {
   if (window.scrollY > 50) {
     navHeader.style.backgroundColor = navHeaderBackground;
+    navHeader.style.backdropFilter = "blur(10px)";
     navHeader.style.transition = backgroundTransition;
     navLogo.style.color = generalColor;
     toggleButton.style.fill = generalColor;
@@ -44,18 +45,6 @@ function navHeaderScroll() {
 window.addEventListener("scroll", navHeaderScroll);
 
 // ===== Menu button toggle class =====
-menu.addEventListener("click", function () {
-  mobileMenu.classList.toggle("active");
-});
-
-// downloadButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   alert("Download CV button clicked");
-// });
-
-// downloadButton.onclick = function () {
-//   alert("Hello World from the download button");
-// };
 
 // ===== Dark Mode =====
 
@@ -64,17 +53,25 @@ if (localStorage.getItem("darkMode") === "enabled") {
   document.body.classList.toggle("dark-background");
   skillHeading.style.color = "white";
 }
+
+const skillLinkBtn = document.getElementById("skills-link-btn");
+
 // Toggle dark mode on button click
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark-background");
   if (document.body.classList.contains("dark-background")) {
     toggleButton.style.fill = "white";
     document.getElementById("email-link").style.color = "white";
+    myselfLink.style.color = "white";
+    skillLinkBtn.style.color = "white";
   } else {
     toggleButton.style.fill = "";
     document.getElementById("email-link").style.color = "";
+    myselfLink.style.color = "";
+    skillLinkBtn.style.color = "";
   }
 });
+
 // Save the preference
 if (document.body.classList.contains("dark-background")) {
   localStorage.setItem("darkMode", "enabled");
@@ -169,6 +166,9 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  const dataField = [nameInput.value, emailInput.value, messageInput.value];
+
+  console.table(dataField);
   console.log("From submitted successfully");
 });
 

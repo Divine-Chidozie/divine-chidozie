@@ -18,6 +18,9 @@
             <li><a class="nav-list-items" href="#projects">Projects</a></li>
             <li><a class="nav-list-items" href="#experience">Experience</a></li>
             <li><a class="nav-list-items" href="#education">Education</a></li>
+            <li>
+              <a class="nav-list-items" href="pages/blog.html">Blog</a>
+            </li>
             <li><a class="nav-list-items" href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -72,6 +75,7 @@
               </li>
               <li><a href="#education">Education</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="/pages/blog.html">Blog</a></li>
               <a
                 href="assets/Divine-Chidozie[Frontend-Dev].pdf"
                 class="nav-header-btn-container new-download"
@@ -117,14 +121,18 @@
             </p>
 
             <div class="hero-btn-container">
-              <a href="#projects" class="view-btn">View My Works</a>
-              <a href="#contact" class="contact-btn">Contact Me</a>
+              <a href="#projects" id="view-project" class="view-btn"
+                >View My Works</a
+              >
+              <a id="contact-me" href="#contact" class="contact-btn"
+                >Contact Me</a
+              >
             </div>
           </div>
 
           <div class="hero-image-container">
             <img
-              src="images/Divine-Chidozie.png"
+              src="images/divine-chidozie-portfolio-wesbite-image.png"
               loading="lazy"
               alt="Divine Chidozie Portfolio Preview"
               class="hero-image"
@@ -143,13 +151,13 @@
                 <li class="myself" id="myself-link">MYSELF</li>
                 <li class="education" id="education-link">EDUCATION</li>
                 <li class="skills" id="skills-link">
-                  <a href="pages/skills.html">SKILLS</a>
+                  <a id="skills-link-btn" href="pages/skills.html">SKILLS</a>
                 </li>
               </ul>
 
               <p class="about-para" id="about-para">
-                Hi, I'm Igwe Divine Chidozie, a frontend developer focused on
-                transforming ideas into visually engaging and user-friendly
+                Hi, I'm Divine Chidozie Igwe-Ebi, a frontend developer focused
+                on transforming ideas into visually engaging and user-friendly
                 digital experiences. I specialize in building responsive,
                 high-performance web interfaces using modern technologies such
                 as React.js, Tailwind CSS, and other contemporary tools. Beyond
@@ -207,55 +215,15 @@
               functional web experience using React, and Tailwind CSS.
             </p>
             <p class="project-para second-project-para">
-              This collection showcases my work across different areas - from
-              landing pages to reuseable UI components and responsive layouts.
-              Each projects reflects my growth as a frontend developer and my
-              on-going transition into full-stack functionality
+              These projects showcase my ability to build responsive, scalable,
+              and user-focused web applications using modern frontend
+              technologies. Each project reflects my problem-solving skills,
+              attention to detail, and continuous growth as a developer.
             </p>
           </div>
 
           <div class="project-container">
-            <!-- First Project:: ConsoleMart Application -->
-            <div class="first-project-paucek">
-              <img
-                src="images/consoleMart.png"
-                alt="Screenshot of ConsoleMart E-commerce Web Apllication"
-              />
-              <h3 class="project-heading-paucek">
-                ConsoleMart — E-commerce Store
-              </h3>
-              <p class="first-project-para">
-                ConsoleMart is a fully responsive e-commerce web application
-                designed to deliver a smooth and intuitive online shopping
-                experience. It allows users to browse products, view detailed
-                information, and manage items within a shopping cart. The
-                project features clear navigation, a modern product layout, and
-                interactive shopping flows, demonstrating the ability to build
-                well-structured, user-friendly, and scalable e-commerce
-                platforms suitable for real-world use
-              </p>
-              <ul class="project-list-item">
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>TailwindCSS</li>
-              </ul>
-              <div class="project-btn">
-                <a
-                  href="https://consolemart-store.vercel.app/"
-                  target="_blank"
-                  class="project-link"
-                  >View Live</a
-                >
-                <a
-                  href="https://github.com/Divine-Chidozie/consolemart-store"
-                  target="_blank"
-                  class="view-github"
-                  >View Github</a
-                >
-              </div>
-            </div>
-
-            <!-- Second Project:: Paucek Delivery Application -->
+            <!-- First Project:: Paucek Delivery Application -->
             <div class="first-project-paucek">
               <img
                 src="images/paucek.png"
@@ -288,6 +256,46 @@
                 >
                 <a
                   href="https://github.com/Divine-Chidozie/paucek-delivery"
+                  target="_blank"
+                  class="view-github"
+                  >View Github</a
+                >
+              </div>
+            </div>
+
+            <!-- Second Project:: ConsoleMart Application -->
+            <div class="first-project-paucek">
+              <img
+                src="images/consoleMart.png"
+                alt="Screenshot of ConsoleMart E-commerce Web Apllication"
+              />
+              <h3 class="project-heading-paucek">
+                ConsoleMart — E-commerce Store
+              </h3>
+              <p class="first-project-para">
+                ConsoleMart is a fully responsive e-commerce web application
+                designed to deliver a smooth and intuitive online shopping
+                experience. It allows users to browse products, view detailed
+                information, and manage items within a shopping cart. The
+                project features clear navigation, a modern product layout, and
+                interactive shopping flows, demonstrating the ability to build
+                well-structured, user-friendly, and scalable e-commerce
+                platforms suitable for real-world use
+              </p>
+              <ul class="project-list-item">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>TailwindCSS</li>
+              </ul>
+              <div class="project-btn">
+                <a
+                  href="https://consolemart-store.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                  >View Live</a
+                >
+                <a
+                  href="https://github.com/Divine-Chidozie/consolemart-store"
                   target="_blank"
                   class="view-github"
                   >View Github</a
@@ -534,10 +542,50 @@
               <a
                 href="https://github.com/Divine-Chidozie/ace-web-frontend"
                 target="_blank"
-                >View Code</a
+                >View Live</a
               >
               <a href="https://ace-digital-demo.vercel.app/" target="_blanks"
-                >View Demo</a
+                >View Github</a
+              >
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-heading-span">
+              <h3 class="experience-heading-3">
+                Frontend Developer Intern - Trueminds Innovation Ltd
+              </h3>
+              <span class="experience-date">February 2026 - April 2026</span>
+            </div>
+
+            <p class="experience-item-para">
+              Participated in a frontend development internship program at
+              TrueMinds Innovations Ltd, where i worked on both individual and
+              collaborative projects. Built responsive user interfaces from
+              Figma designs, collaborated with cross - functional teams, and
+              contributed to the development of a Learning Management System
+              (TalentFlow LMS).
+            </p>
+
+            <ul class="experience-skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+              <li>Git/Github</li>
+              <li>Team Collaboration</li>
+              <li>Slack Commuication</li>
+              <li>UI Implementation</li>
+            </ul>
+
+            <div class="experience-links">
+              <a
+                href="https://github.com/Divine-Chidozie/ace-web-frontend"
+                target="_blank"
+                >View Live</a
+              >
+              <a href="https://ace-digital-demo.vercel.app/" target="_blanks"
+                >View Github</a
               >
             </div>
           </div>
@@ -600,7 +648,7 @@
             <h2 class="contact-heading">Ready to Start Your Project?</h2>
             <p class="contact-para">
               Got a project, idea, or just want to say hello? Drop me a message
-              through the form or reach me via the contact details below—i'd
+              through the form or reach me via the contact details below — i'd
               love to hear from you
             </p>
             <a href="#" class="work-together-btn" id="work-together-btn"
@@ -674,19 +722,21 @@
               </div>
             </aside>
 
-            <form id="form">
+            <form id="form" action="form/api/send-message" method="post">
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your Name"
+                autocomplete="on"
+                placeholder="Your Full Name"
               />
               <p id="name-error" class="error name-error"></p>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your Email"
+                autocomplete="on"
+                placeholder="Your Email Address"
               />
               <p id="email-error" class="error email-error"></p>
               <textarea
@@ -722,6 +772,7 @@
               <li><a href="#education">About Me</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="/pages/skills.html">Skills</a></li>
+              <li><a href="pages/blog.html">Blog</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>

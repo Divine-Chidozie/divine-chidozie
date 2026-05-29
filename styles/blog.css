@@ -1,0 +1,143 @@
+:root {
+  --blog-heading-color: #111827;
+  --para-color: #000000;
+}
+
+.blog-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.hero-heading {
+  color: var(--blog-heading-color);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+}
+
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.introduction-container,
+.interest-in-tech,
+.challenges,
+.real-projects-heading-desc,
+.internship-growth,
+.current-focus,
+.frontend-development,
+.future-goals,
+.conclusion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 200;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.learning-head-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.learning-head-para p {
+  text-align: center;
+}
+
+.learning-fundatmental-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px #302f2f;
+  margin-bottom: 10px;
+}
+
+.desc strong,
+.desc {
+  font-size: 14px;
+}
+
+.fundatmental-last-para {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.challenges p {
+  text-align: center;
+}
+
+.project-list,
+.internship-list,
+.focus-list,
+.frontend-development-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-list p {
+  margin-bottom: 2px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px #302f2f;
+  margin: 10px 0;
+}
+
+.list li {
+  list-style-type: none;
+  box-shadow: 0px 0px 4px #302f2f;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.project-last-desc {
+  /* text-align-last: center; */
+  margin-bottom: 10px;
+}
+
+.professional {
+  margin-top: 25px;
+}

@@ -101,6 +101,7 @@ body {
 .skill-logo {
   color: var(--primary-color);
 }
+
 .nav-header-list {
   display: flex;
   justify-content: center;
@@ -116,6 +117,11 @@ body {
 .nav-header-list li a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.nav-header-list li a:hover {
+  color: var(--btn-bg);
+  transition: 0.3s ease-in;
 }
 
 .download-toggle-container {
@@ -277,8 +283,9 @@ main {
   color: oklch(49.939% 0.2637 302.037 / 0.619);
   transition: 0.3s ease-in;
 }
+
 .myself {
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-underline-offset: 18px;
   margin-bottom: 25px;
   text-decoration-thickness: 2px;
@@ -294,9 +301,11 @@ main {
   color: var(--text-color);
   font-weight: 600;
 }
+
 .education-para {
   display: none;
 }
+
 .skills-para {
   display: none;
   justify-content: start;
@@ -322,7 +331,7 @@ main {
   height: 380px;
   margin: 0px 50px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 /* ***** Projects Section ***** */
@@ -482,7 +491,7 @@ main {
 .experience-links a:hover {
   transition: 0.3s ease;
   transform: translate(-5px);
-  box-shadow: 0px 0px 10px hsl(0, 2%, 61%);
+  /* box-shadow: 0px 0px 10px hsl(0, 2%, 61%); */
 }
 
 /* Heading paragraphs for project/experience/contact */
@@ -706,6 +715,11 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.footer-section-container ul li a:hover {
+  color: var(--btn-bg);
+  transition: 0.3s;
 }
 
 .footer-heading,

@@ -1,0 +1,87 @@
+/* 1536px || 1280px || 1024px || 768px || 640px */
+
+@media screen and (min-width: 640px) {
+  .learning-fundatmental-desc {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .learning-fundatmental-desc {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .desc {
+    width: unset;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .learning-fundatmental-desc {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .desc {
+    width: unset;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .learning-fundatmental-desc {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .desc {
+    width: unset;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .learning-fundatmental-desc {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .desc {
+    width: unset;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+  }
+}
