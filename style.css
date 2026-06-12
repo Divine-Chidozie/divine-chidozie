@@ -97,6 +97,12 @@ body {
   font-size: 25px;
 }
 
+.portfolio-logo {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
 /* Skill Logo Style for Skill Page */
 .skill-logo {
   color: var(--primary-color);

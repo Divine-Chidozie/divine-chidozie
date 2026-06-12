@@ -11,6 +11,12 @@
   margin-top: 50px;
 }
 
+.portfolio-logo {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
 .hero-heading {
   color: var(--blog-heading-color);
   font-size: 30px;

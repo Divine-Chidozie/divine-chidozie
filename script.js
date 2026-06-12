@@ -1,6 +1,7 @@
 const downloadButton = document.getElementById("download-btn");
 const navHeader = document.getElementById("nav-header");
 const navLogo = document.querySelector(".logo");
+const portfolioLogo = document.getElementById("portfolioLogo");
 const navListItems = document.querySelectorAll(".nav-list-items");
 const menu = document.getElementById("menu");
 const menuSpan = document.querySelectorAll(".menu-span");
@@ -24,7 +25,6 @@ function navHeaderScroll() {
     navHeader.style.transition = backgroundTransition;
     navLogo.style.color = generalColor;
     toggleButton.style.fill = generalColor;
-
     navListItems.forEach((item) => {
       item.style.color = "white";
     });
