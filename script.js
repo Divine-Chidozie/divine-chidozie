@@ -11,6 +11,8 @@ const workTogetherButton = document.getElementById("work-together-btn");
 // ===== Skill Heading for skill page =====
 const skillHeading = document.getElementById("skill-heading");
 
+// console.warn(exHeading);
+
 const navHeaderBackground = `#9318fa`;
 const backgroundTransition = "0.3s ease-in";
 const generalColor = "white";
@@ -56,9 +58,30 @@ if (localStorage.getItem("darkMode") === "enabled") {
 
 const skillLinkBtn = document.getElementById("skills-link-btn");
 
+menu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+});
+
+const exHeading = document.getElementById("ex-heading-1");
+const exheading2 = document.getElementById("ex-heading-2");
+const footerLinkedlinSocial = document.getElementById("footer-linkedin-social");
+const footerGithubSocial = document.getElementById("footer-github-social");
 // Toggle dark mode on button click
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark-background");
+  exHeading.style.color = "#111111";
+  exheading2.style.color = "#111111";
+  footerLinkedlinSocial.style.backgroundColor = "white";
+  footerLinkedlinSocial.style.borderRadius = "0";
+
+  footerGithubSocial.style.backgroundColor = "white";
+  footerGithubSocial.style.borderRadius = "0";
   if (document.body.classList.contains("dark-background")) {
     toggleButton.style.fill = "white";
     document.getElementById("email-link").style.color = "white";
@@ -69,6 +92,13 @@ toggleButton.addEventListener("click", () => {
     document.getElementById("email-link").style.color = "";
     myselfLink.style.color = "";
     skillLinkBtn.style.color = "";
+    exHeading.style.color = "";
+    exheading2.style.color = "";
+    footerLinkedlinSocial.style.backgroundColor = "";
+    footerLinkedlinSocial.style.borderRadius = "3";
+
+    footerGithubSocial.style.backgroundColor = "";
+    footerGithubSocial.style.borderRadius = "3";
   }
 });
 

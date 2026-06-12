@@ -187,6 +187,7 @@
     display: block;
     height: 4px;
     background-color: oklch(49.6% 0.265 301.924);
+
     border-radius: 2px;
   }
   /* Mobile menu hidden by default */
