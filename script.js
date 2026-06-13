@@ -1,7 +1,6 @@
 const downloadButton = document.getElementById("download-btn");
 const navHeader = document.getElementById("nav-header");
 const navLogo = document.querySelector(".logo");
-const portfolioLogo = document.getElementById("portfolioLogo");
 const navListItems = document.querySelectorAll(".nav-list-items");
 const menu = document.getElementById("menu");
 const menuSpan = document.querySelectorAll(".menu-span");
@@ -25,6 +24,7 @@ function navHeaderScroll() {
     navHeader.style.transition = backgroundTransition;
     navLogo.style.color = generalColor;
     toggleButton.style.fill = generalColor;
+
     navListItems.forEach((item) => {
       item.style.color = "white";
     });
@@ -36,6 +36,7 @@ function navHeaderScroll() {
     navLogo.style.color = "#0000EE";
     // toggleButton.style.fill = "green";
     toggleButton.style.fill = "#8200db";
+
     navListItems.forEach((item) => {
       item.style.color = "";
     });
@@ -73,6 +74,9 @@ const exheading2 = document.getElementById("ex-heading-2");
 const footerLinkedlinSocial = document.getElementById("footer-linkedin-social");
 const footerGithubSocial = document.getElementById("footer-github-social");
 // Toggle dark mode on button click
+
+const proTip = document.getElementById("proTip");
+
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark-background");
   exHeading.style.color = "#111111";
@@ -82,6 +86,7 @@ toggleButton.addEventListener("click", () => {
 
   footerGithubSocial.style.backgroundColor = "white";
   footerGithubSocial.style.borderRadius = "0";
+
   if (document.body.classList.contains("dark-background")) {
     toggleButton.style.fill = "white";
     document.getElementById("email-link").style.color = "white";
@@ -224,7 +229,7 @@ workTogetherButton.onclick = function (e) {
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 
-const text = "A Frontend Developer";
+const text = "Frontend Developer";
 let i = 0;
 const roleEl = document.querySelector(".hero-role");
 
