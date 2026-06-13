@@ -294,8 +294,14 @@
     font-size: 17px;
     margin-bottom: 20px;
   }
+  .contact-heading-para {
+    background-color: green;
+  }
 
-  .contact-para{
+  .contact-heading-para h2 {
+    text-align: center;
+  }
+  .contact-para {
     margin-top: -15px;
   }
   .ex-para {
