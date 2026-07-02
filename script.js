@@ -11,22 +11,18 @@ const workTogetherButton = document.getElementById("work-together-btn");
 // ===== Skill Heading for skill page =====
 const skillHeading = document.getElementById("skill-heading");
 
-// console.warn(exHeading);
-
-const navHeaderBackground = `#9318fa`;
+const navHeaderBackground = `black`;
 const backgroundTransition = "0.3s ease-in";
-const generalColor = "white";
+const generalColor = "green";
 
 function navHeaderScroll() {
   if (window.scrollY > 50) {
     navHeader.style.backgroundColor = navHeaderBackground;
-    navHeader.style.backdropFilter = "blur(10px)";
     navHeader.style.transition = backgroundTransition;
     navLogo.style.color = generalColor;
-    toggleButton.style.fill = generalColor;
-
+    navHeader.style.backdropFilter = "blur(5px)";
     navListItems.forEach((item) => {
-      item.style.color = "white";
+      item.style.color = "oklch(0.58 0 0)";
     });
     menuSpan.forEach((span) => {
       span.style.backgroundColor = generalColor;

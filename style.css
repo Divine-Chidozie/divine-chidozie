@@ -96,7 +96,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
   font-size: 14px;
   position: fixed;
   top: 0;
@@ -135,6 +134,42 @@ body {
   list-style-type: none;
 }
 
+.color {
+  background-color: black;
+  color: var(--text-color);
+  padding: 0 10px;
+  padding-left: 0;
+  outline: none;
+  padding: 2px 25px;
+  font-size: 12px;
+  padding-left: 8px;
+  border: none;
+}
+
+.color-picker {
+  background-color: black;
+}
+
+.golden {
+  color: gold;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+.firebrick {
+  color: firebrick;
+}
+
+.rosybrown {
+  color: rosybrown;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -158,7 +193,7 @@ body {
 
 .toggle-btn {
   cursor: pointer;
-  fill: var(--text-color);
+  fill: var(--text-color) !important;
 }
 
 .nav-header-btn-container,
@@ -198,9 +233,9 @@ main {
 }
 
 .span {
-  border: 1px solid var(--primary-color);
-  font-size: 14px;
-  color: var(--open-new-opportunities-color);
+  border: 1px solid oklch(0.7 0.2 295);
+  font-size: 13px;
+  color: oklch(0.7 0.2 295);
   background-color: oklch(0.16 0.015 260);
   display: block;
   text-align: justify;
@@ -212,8 +247,8 @@ main {
 }
 
 .frontend-heading {
-  color: var(--open-new-opportunities-color);
-  font-size: 24px;
+  color: oklch(0.7 0.2 295);
+  font-size: 20px;
 }
 
 /* .open-to-roles {
@@ -294,8 +329,8 @@ main {
 
 /* ***** About Section ***** */
 .about-me-heading {
-  color: var(--primary-color);
-  font-size: 14px;
+  color: oklch(0.7 0.2 295);
+  font-size: 13px;
   margin-top: 20px;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -363,12 +398,14 @@ main {
   text-underline-offset: 18px;
   margin-bottom: 25px;
   text-decoration-thickness: 2px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #ffffff;
 }
 
 .education,
 .skills {
-  color: var(--primary-color) !important;
+  /* color: var(--primary-color) !important; */
+  color: #ffffff;
 }
 
 .about-para {
@@ -484,7 +521,7 @@ main {
 .first-project-para {
   padding: 0 15px;
   text-align: left;
-  color: var(--text-muted);
+  color: lab(51.28% -0.0000298023 0);
   line-height: 1.5;
   width: 100%;
   font-size: 14px;
@@ -565,8 +602,8 @@ main {
   letter-spacing: 0.35rem;
   text-transform: uppercase;
   font-family: monospace;
-  color: var(--primary-color);
-  font-size: 14px;
+  color: oklch(0.7 0.2 295);
+  font-size: 13px;
 }
 
 .professional-journey {
@@ -617,12 +654,10 @@ main {
 }
 
 .year {
-  /* color: var(--primary-color); */
-  color: oklch(
-    0.7 0.2 295
-  ); /* This is the correct color to use:: N/B Chnage later where applicable to all..*/
+  font-size: 13px;
   margin-bottom: 20px;
   margin-top: 10px;
+  color: oklch(0.7 0.2 295);
 }
 
 .school {
@@ -630,12 +665,13 @@ main {
 }
 
 .course-of-study {
-  font-size: 25px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
 .study-description {
   color: var(--muted-foreground);
+  font-size: 14px;
 }
 /* ***** Experience Section ***** */
 .experience-section,
@@ -643,8 +679,8 @@ main {
 .certification {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .certificate-date {
@@ -694,7 +730,7 @@ main {
 }
 
 .experience-item-para {
-  font-size: 15px;
+  font-size: 14px;
   margin: 5px 0px;
   font-family: monospace;
 }
@@ -762,9 +798,21 @@ main {
 .contact-heading-para {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin-top: 65px;
+}
+
+.contact-heading-para-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 85px;
+}
+
+.experience-heading-head {
+  text-align: left;
 }
 
 .contact-heading-small {
@@ -812,7 +860,8 @@ main {
 }
 
 .project-heading {
-  font-size: 14px;
+  font-size: 13px;
+  color: oklch(0.7 0.2 295);
 }
 
 .ex-para,
@@ -1039,7 +1088,8 @@ textarea {
   border: 1px solid #5e5e5e59;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-size: 13px;
   color: var(--text-muted);
 }
@@ -1081,14 +1131,14 @@ textarea {
 
 /* ***** Footer Section ***** */
 .footer-section {
-  padding: 20px;
+  /* padding: 20px; */
   background-color: oklch(20.394% 0.00255 248.163 / 0.023);
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   gap: 10px;
   margin-top: 35px;
