@@ -20,6 +20,7 @@ function navHeaderScroll() {
     navHeader.style.backgroundColor = navHeaderBackground;
     navHeader.style.transition = backgroundTransition;
     navLogo.style.color = generalColor;
+ menuSpan.style.backgroundColor = "";
     navHeader.style.backdropFilter = "blur(5px)";
     navListItems.forEach((item) => {
       item.style.color = "oklch(0.58 0 0)";
@@ -30,6 +31,7 @@ function navHeaderScroll() {
   } else {
     navHeader.style.backgroundColor = "";
     navLogo.style.color = "#0000EE";
+   
     // toggleButton.style.fill = "green";
     toggleButton.style.fill = "#8200db";
 

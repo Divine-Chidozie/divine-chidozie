@@ -21,18 +21,20 @@
   --view-my-work-bg-color: lab(41.088% 68.9966 -91.995);
 }
 
-/* .dark-background { */
-/* --bg-color: oklch(12.9% 0.042 264.695); */
-/* --text-color: oklch(98.4% 0.003 247.858); */
-/* --text-color: oklch(0.58 0 0); */
-/* --para-text: #000000; */
-/* --heading-color: #000000; heading in dark mode */
-/* --heading-four: #000000; */
-/* --para-four: #000000; */
-/* --muted-text: #cccccc; */
-/* --card-bg: #111111; */
-/* --btn-bg: oklch(49.6% 0.265 301.924); */
-/* } */
+.dark-background {
+  --bg-color: oklch(12.9% 0.042 264.695);
+  background-color: whitesmoke;
+  /* background-color: #ffffffda; */
+  --text-color: oklch(98.4% 0.003 247.858);
+  --text-color: oklch(0.58 0 0);
+  --para-text: #000000;
+  --heading-color: #000000; /* heading in dark mode */
+  --heading-four: #000000;
+  --para-four: #000000;
+  --muted-text: #cccccc;
+  --card-bg: #111111;
+  --btn-bg: oklch(49.6% 0.265 301.924);
+}
 
 /* ***** Global Styles ***** */
 * {
@@ -132,42 +134,6 @@ body {
   align-items: center;
   gap: 20px;
   list-style-type: none;
-}
-
-.color {
-  background-color: black;
-  color: var(--text-color);
-  padding: 0 10px;
-  padding-left: 0;
-  outline: none;
-  padding: 2px 25px;
-  font-size: 12px;
-  padding-left: 8px;
-  border: none;
-}
-
-.color-picker {
-  background-color: black;
-}
-
-.golden {
-  color: gold;
-}
-
-.blue {
-  color: blue;
-}
-
-.purple {
-  color: purple;
-}
-
-.firebrick {
-  color: firebrick;
-}
-
-.rosybrown {
-  color: rosybrown;
 }
 
 .mobile-menu {
@@ -395,7 +361,7 @@ main {
 
 .myself {
   text-decoration: underline !important;
-  text-underline-offset: 18px;
+  text-underline-offset: 13px;
   margin-bottom: 25px;
   text-decoration-thickness: 2px;
   /* color: var(--primary-color); */
@@ -410,7 +376,7 @@ main {
 
 .about-para {
   font-size: 15px;
-  line-height: 2;
+  line-height: 1.7;
   text-align: justify;
   width: 90%;
   margin-bottom: 20px;
@@ -562,8 +528,13 @@ main {
 .project-btn {
   display: flex;
   gap: 10px;
-  padding-left: 10px;
+  padding: 5px 10px;
   margin-top: auto;
+  border: 1px solid oklch(0.16 0.015 260);
+  box-shadow: 0px 0px 2px oklch(0.58 0 0);
+  border-radius: 50px;
+  /* border: 1px solid oklch(0.58 0 0); */
+  font-size: 12px;
 }
 
 .project-link,

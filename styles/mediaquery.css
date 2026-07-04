@@ -5,10 +5,11 @@
     text-align: justify;
   }
   .hero-heading {
-    font-size: 30px;
+    font-size: 22px !important;
     margin-bottom: 0px;
     line-height: 35px;
   }
+
   .hero-para {
     font-size: 16px;
   }
@@ -107,9 +108,11 @@
     left: 0;
     width: 100%;
   }
+
   .mobile-menu li {
     padding: 10px;
   }
+
   .mobile-menu li a {
     text-decoration: none;
     color: black;
@@ -187,8 +190,8 @@
   /* Hamburger lines */
   .hamburger-menu span {
     display: block;
-    height: 4px;
-    background-color: oklch(49.6% 0.265 301.924);
+    height: 2px;
+    background-color: oklch(0.58 0 0);
     border-radius: 2px;
   }
 
@@ -198,7 +201,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
+    background-color: oklch(0.06 0.015 260);
     position: absolute; /* for overlay effect*/
     top: 60px;
     left: 0;
@@ -206,14 +209,14 @@
   }
 
   .mobile-menu li {
-    padding: 10px;
+    padding: 5px;
   }
 
   .mobile-menu li a {
     text-decoration: none;
-    color: black;
+    color: oklch(0.58 0 0);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 5px;
   }
 
@@ -245,25 +248,31 @@
   }
 
   .hero-para {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 1.6;
     text-align: left;
     width: 95%;
+    margin-top: 0;
   }
 
   .view-btn,
   .contact-btn {
-    padding: 12px 24px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 13px;
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
   }
 
   .span {
-    font-size: 14px;
-    padding: 4px;
+    font-size: 12px;
+    padding: 3px;
     padding-left: 10px;
+    margin-bottom: 6px;
+  }
+
+  .frontend-heading {
+    font-size: 14px;
   }
 
   .open-to-roles {
@@ -271,9 +280,9 @@
   }
 
   .hero-image {
-    width: 220px;
-    height: 220px;
-    border: 2px solid #9318fa;
+    width: 280px;
+    height: 280px;
+    border: 1px solid lab(41.088% 68.9966 -91.995);
   }
 
   .hero-btn-container {
@@ -288,9 +297,27 @@
     margin-bottom: 40px;
   }
 
-  .about-para {
+  .about-me-heading,
+  .project-heading,
+  .time-line,
+  .contact-heading-small {
+    font-size: 12px;
+  }
+
+  .project-heading,
+  .about-me-heading {
+    margin-bottom: 0;
+  }
+
+  .myself,
+  .education {
+    font-size: 13px;
+  }
+
+  .about-para,
+  .project-para {
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
   }
 
@@ -309,8 +336,16 @@
     margin: 0 auto !important;
   }
 
-  .about-me-para {
+  .about-me-para,
+  .featured-projects-para,
+  .professional-journey,
+  .contact-heading {
     margin: 5px 0px 20px 0px;
+    font-size: 16px !important;
+  }
+
+  .contact-heading {
+    margin-bottom: 0;
   }
 
   .about-me-para,
@@ -324,9 +359,19 @@
   .contact-para {
     width: 100%;
     text-align: left;
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 20px;
   }
+
+  .professional-journey {
+    letter-spacing: 0;
+    margin-top: -8px;
+  }
+
+  .project-para {
+    line-height: 1.7;
+  }
+
   .contact-heading-para {
     display: flex;
     justify-content: center;
@@ -338,12 +383,39 @@
   }
 
   .project-btn {
-    font-size: 14px;
+    font-size: 12px;
+    box-shadow: none;
+    border: none;
+    background-color: none;
+  }
+
+  .project-btn:hover {
+    background: none;
+  }
+
+  .project-number {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+
+  .project-heading-paucek {
+    font-size: 13px;
+    min-height: 30px;
+    padding-left: 10px;
+  }
+
+  .project-list-item li {
+    background-color: black;
+    color: lab(51.28% -0.0000298023 0);
+    font-size: 11px;
+    border: 1px solid oklch(0.16 0.015 260);
+    box-shadow: 0px 0px 2px oklch(0.58 0 0);
+    border-radius: 50px;
   }
 
   .course-of-study,
   .work-title {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .contact-heading-para h2 {
@@ -371,6 +443,12 @@
     width: 100%;
   }
 
+  .edu-container h2,
+  .experience-heading h2,
+  .certification h2 {
+    font-size: 14px;
+  }
+
   .experience-heading-span {
     flex-direction: column;
     align-self: flex-start;
@@ -378,6 +456,13 @@
   }
   .experience-heading-3 {
     margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .study-description,
+  .experience-item-para {
+    font-size: 12px !important;
+    line-height: 1.7;
   }
 
   .experience-item-para {
@@ -385,6 +470,15 @@
     line-height: 1.5;
     width: 100%;
     font-family: monospace;
+  }
+
+  .experience-item-list li {
+    font-size: 12px;
+  }
+
+  .certification-details-container h4,
+  .certification-details-container p {
+    font-size: 12px;
   }
 
   .experience-skills-list {
@@ -405,6 +499,11 @@
   .design-pattern {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .email,
+  .email-link {
+    font-size: 12px;
   }
 
   .contact-address-form {
@@ -444,11 +543,11 @@
   .footer-heading,
   .links-heading,
   .connect-heading {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .footer-para {
-    font-size: 15px;
+    font-size: 12px;
     font-family: monospace;
     width: 100%;
     text-align: left;
@@ -458,8 +557,9 @@
   .connect-heading {
     margin-top: -5px;
   }
+
   .footer-list-items li a {
-    font-size: 14px;
+    font-size: 12px;
   }
   .connect-para,
   .connect-para a {
@@ -468,15 +568,24 @@
 
   .connect-text {
     width: 100%;
+    font-size: 12px;
   }
 
   .subscribe-container {
     width: 100%;
   }
 
+  .subscribe-form::placeholder {
+    font-size: 12px;
+  }
+
+  .subscribe {
+    font-size: 12px;
+  }
+
   .copyright {
-    font-size: 14px;
-    margin-top: -10px;
+    font-size: 12px;
+    margin-top: -20px;
   }
 
   /* Toggle button and Hamburger Menu */
