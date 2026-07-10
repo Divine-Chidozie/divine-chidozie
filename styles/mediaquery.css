@@ -89,8 +89,47 @@
   .hero-heading {
     font-size: 35px !important;
     margin-top: 30px !important;
-    color: red;
   }
+
+  .hero-para,
+  .project-para {
+    line-height: 1.8;
+  }
+
+  .skills a {
+    color: white;
+    font-size: 13px;
+  }
+
+  .about-me-para,
+  .featured-projects-para,
+  .professional-journey,
+  .contact-heading {
+    font-size: 27px;
+  }
+
+  .project-list-item li {
+    background-color: black;
+    color: lab(51.28% -0.0000298023 0);
+    font-size: 11px;
+    border: 1px solid oklch(0.16 0.015 260);
+    box-shadow: 0px 0px 2px oklch(0.58 0 0);
+    border-radius: 50px;
+  }
+
+  .project-btn {
+    background-color: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .certificate-item {
+    margin: 5px 0;
+  }
+
   .hamburger-menu {
     width: 25px;
     height: 20px;
@@ -182,7 +221,7 @@
   body {
     overflow-x: hidden;
     box-sizing: border-box;
-    background-color: blue;
+   
   }
 
   .hero-container {

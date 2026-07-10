@@ -530,11 +530,6 @@ main {
   gap: 10px;
   padding: 5px 10px;
   margin-top: auto;
-  border: 1px solid oklch(0.16 0.015 260);
-  box-shadow: 0px 0px 2px oklch(0.58 0 0);
-  border-radius: 50px;
-  /* border: 1px solid oklch(0.58 0 0); */
-  font-size: 12px;
 }
 
 .project-link,
@@ -547,7 +542,7 @@ main {
   text-align: center;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .project-link:hover,
