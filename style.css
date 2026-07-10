@@ -97,7 +97,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 14px;
   position: fixed;
   top: 0;
@@ -106,21 +106,24 @@ body {
   z-index: 1000;
 }
 
+.navbar-scroll {
+  backdrop-filter: blur(5px);
+}
+
 .nav-header span {
   color: rgba(93, 36, 146, 0.669);
   font-weight: bold;
   font-size: 20px;
 }
 
+.portfolio-logo {
+  width: 50px;
+  height: 50px;
+}
+
 .logo {
   text-decoration: none;
   font-size: 25px;
-}
-
-.portfolio-logo {
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
 }
 
 /* Skill Logo Style for Skill Page */
@@ -136,6 +139,27 @@ body {
   list-style-type: none;
 }
 
+.social-links-in-nav {
+  /* background-color: green ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links-in-nav img {
+  width: 18px;
+  background: var(--muted-foreground);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.social-links-in-nav img:hover {
+  background-color: oklch(0.7 0.2 295);
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -146,8 +170,9 @@ body {
 }
 
 .nav-header-list li a:hover {
-  color: var(--btn-bg);
-  transition: 0.3s ease-in;
+  color: white;
+
+  transition: 0.1s ease-in;
 }
 
 .download-toggle-container {
