@@ -8,6 +8,94 @@ const mobileMenu = document.getElementById("mobileMenu");
 const toggleButton = document.querySelector("#toggle-btn");
 const workTogetherButton = document.getElementById("work-together-btn");
 
+// ***** Theme Color
+const themeBtn = document.getElementById("theme-btn");
+const showThemeColor = document.getElementById("show-theme-color");
+
+themeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  showThemeColor.classList.toggle("show-theme-container");
+});
+
+const openNewOpportunities = document.getElementById("open-new-opportunities");
+const openNewOpportunitiesBorder = document.getElementById(
+  "open-new-opportunities",
+);
+const aboutMeHeading = document.getElementById("about-me-heading");
+const portfolioHeading = document.getElementById("portfolio-heading");
+const allProjectBtn = document.getElementById("all-project-btn");
+const timeLineHeading = document.getElementById("time-line-heading");
+const educationYear = document.getElementById("educationYear");
+const experienceDate = document.getElementById("experienceDate");
+const experienceDateTwo = document.getElementById("experienceDateTwo");
+const getTouch = document.getElementById("get-in-touch-heading");
+const quickLinks = document.getElementById("quick-link");
+const stayUpdated = document.getElementById("stay-updated");
+
+const goldColorPalateType = [
+  openNewOpportunities,
+  aboutMeHeading,
+  portfolioHeading,
+  allProjectBtn,
+  timeLineHeading,
+  educationYear,
+  experienceDate,
+  experienceDateTwo,
+  getTouch,
+  quickLinks,
+  stayUpdated,
+];
+
+const themeColors = document.querySelectorAll(".theme-color");
+
+const themeMap = {
+  golden: "gold",
+  cyan: "cyan",
+  purple: "purple",
+  green: "green",
+  rose: "deeppink",
+};
+
+themeColors.forEach((theme) => {
+  theme.addEventListener("click", (e) => {
+    e.preventDefault();
+    // Reset all menu item colors
+    themeColors.forEach((item) => (item.style.color = ""));
+
+    // Highlight selected menu item
+    theme.style.color = themeMap[theme.id];
+
+    // Apply theme to the page
+    goldColorPalateType.forEach((item) => {
+      item.style.color = themeMap[theme.id];
+    });
+
+    openNewOpportunitiesBorder.style.borderColor = themeMap[theme.id];
+  });
+});
+// const goldenColor = document.getElementById("golden");
+// goldenColor.addEventListener("click", () => {
+//   goldenColor.style.color = "gold";
+//   // navLogo.style.fill = "gold";
+//   goldColorPalateType.forEach((colortype) => {
+//     colortype.style.color = "gold";
+//     openNewOpportunitiesBorder.style.borderColor = "gold";
+//   });
+// });
+
+// const cyanColor = document.getElementById("cyan");
+// cyanColor.addEventListener("click", () => {
+//   goldenColor.removeEventListener("click", () => {
+//     goldenColor.style.color = "gold";
+//     // navLogo.style.fill = "gold";
+//     goldColorPalateType.forEach((colortype) => {
+//       colortype.style.color = "gold";
+//       openNewOpportunitiesBorder.style.borderColor = "gold";
+//     });
+//   });
+//   cyanColor.style.color = "cyan";
+// });
+
 // ===== Skill Heading for skill page =====
 const skillHeading = document.getElementById("skill-heading");
 
@@ -90,10 +178,12 @@ toggleButton.addEventListener("click", () => {
     document.getElementById("email-link").style.color = "white";
     myselfLink.style.color = "white";
     skillLinkBtn.style.color = "white";
+    document.getElementById("hero-heading").style.color = "black";
   } else {
     toggleButton.style.fill = "";
     document.getElementById("email-link").style.color = "";
     myselfLink.style.color = "";
+    document.getElementById("hero-heading").style.color = "";
     skillLinkBtn.style.color = "";
     exHeading.style.color = "";
     exheading2.style.color = "";

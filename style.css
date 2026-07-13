@@ -23,8 +23,7 @@
 
 .dark-background {
   --bg-color: oklch(12.9% 0.042 264.695);
-  background-color: whitesmoke;
-  /* background-color: #ffffffda; */
+  background-color: #f4f7f5;
   --text-color: oklch(98.4% 0.003 247.858);
   --text-color: oklch(0.58 0 0);
   --para-text: #000000;
@@ -137,6 +136,57 @@ body {
   align-items: center;
   gap: 20px;
   list-style-type: none;
+}
+
+.color {
+  background-color: var(--text-color);
+  width: 18px;
+  border-radius: 50px;
+}
+
+.color-theme-container {
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  left: 700px; /* Adjust as needed */
+
+  display: none;
+  width: 15%;
+  background: black;
+  border: 1px solid oklch(0.16 0.015 260);
+  border-radius: 10px;
+  box-shadow: 0 0 2px oklch(0.58 0 0);
+}
+
+.show-theme-container {
+  display: block;
+}
+
+.color-theme-container P {
+  color: var(--text-color);
+  padding: 10px 0px 0px 10px;
+}
+
+.color-theme {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.color-theme li {
+  list-style-type: none;
+  color: var(--text-color);
+  padding: 7px;
+  margin-left: 0px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.color-theme li:hover {
+  border-radius: 8px;
+  box-shadow: 0 0 2px oklch(0.58 0 0);
+  margin: 10px 0;
+  transition: 0.3s ease-in;
+  color: white;
 }
 
 .social-links-in-nav {
@@ -399,6 +449,14 @@ main {
   color: #ffffff;
 }
 
+.technical-skills {
+  color: white !important;
+}
+
+.technical-skills:hover {
+  color: oklch(49.939% 0.2637 302.037 / 0.619) !important;
+}
+
 .about-para {
   font-size: 15px;
   line-height: 1.7;
@@ -451,11 +509,6 @@ main {
   align-items: center;
 }
 .project-container {
-  /* padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -463,7 +516,6 @@ main {
 }
 
 .first-project-paucek {
-  /* border: 1px solid var(--primary-color); */
   border: 1px solid #5e5e5e59;
   border-radius: 10px;
   padding-bottom: 10px;
@@ -632,7 +684,8 @@ main {
 }
 
 .edu-img {
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-right: 10px;
 }
 
 .edu-details {
@@ -902,6 +955,11 @@ main {
   background: oklch(0.1 0.015 260);
   gap: 10px;
   width: 100%;
+}
+
+.experience-img {
+  margin-top: 3px;
+  margin-right: 10px;
 }
 
 .experience-2 {

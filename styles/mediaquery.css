@@ -221,7 +221,6 @@
   body {
     overflow-x: hidden;
     box-sizing: border-box;
-   
   }
 
   .hero-container {
@@ -274,6 +273,11 @@
   /* Show menu when active */
   .mobile-menu.active {
     display: block;
+  }
+
+  .theme-btn {
+    margin: 0px 15px;
+    line-height: 2;
   }
 
   .new-download {

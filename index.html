@@ -40,20 +40,42 @@
         <nav>
           <ul class="nav-header-list">
             <li><a class="nav-list-items" href="#home">ABOUT</a></li>
-            <li><a class="nav-list-items" href="#projects">SKILLS</a></li>
-            <li><a class="nav-list-items" href="#experience">PROJECTS</a></li>
-            <li><a class="nav-list-items" href="#education">JOURNEY</a></li>
-            <li>
+            <li><a class="nav-list-items" href="#education">SKILLS</a></li>
+            <li><a class="nav-list-items" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-list-items" href="#journey">JOURNEY</a></li>
+            <!-- <li>
               <a class="nav-list-items" href="pages/blog.html">BLOG</a>
-            </li>
+            </li> -->
             <li><a class="nav-list-items" href="#contact">CONTACT</a></li>
+            <a id="theme-btn" href="">
+              <img src="images/colors.svg" class="color" alt="Color Image" />
+            </a>
           </ul>
+
+          <div id="show-theme-color" class="color-theme-container">
+            <p>SELECT THEME</p>
+            <ul class="color-theme">
+              <li id="golden" class="theme-color">Golden</li>
+              <li id="cyan" class="theme-color">Cyan</li>
+              <li id="purple" class="theme-color">Purple</li>
+              <li id="green" class="theme-color">Green</li>
+              <li id="rose" class="theme-color">Rose</li>
+            </ul>
+          </div>
         </nav>
 
         <div class="download-toggle-container">
           <div class="social-links-in-nav">
-            <img src="images/logo-github.svg" alt="Github Link" />
-            <img src="images/logo-linkedin.svg" alt="Linedin Link" />
+            <a href="https://github.com/Divine-Chidozie" target="_blank">
+              <img src="images/logo-github.svg" alt="Github Link" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/divine-chidozie-igwe-ebi-48abb7363/"
+              target="_blank"
+            >
+              <img src="images/logo-linkedin.svg" alt="Linedin Link" />
+            </a>
           </div>
           <!-- Comment Download Resume Button and Text:: Uncomment later if need be. -->
           <!-- <a
@@ -100,34 +122,31 @@
           <nav>
             <ul class="mobile-menu" id="mobileMenu">
               <li><a href="#home">ABOUT</a></li>
-              <li><a href="#projects">SKILLS</a></li>
+              <li><a href="#education">SKILLS</a></li>
               <li>
-                <a href="#experience">PROJECTS</a>
+                <a href="#projects">PROJECTS</a>
               </li>
-              <li><a href="#education">JOURNEY</a></li>
-              <li><a href="/pages/blog.html">BLOG</a></li>
+              <li><a href="#journey">JOURNEY</a></li>
+              <!-- <li><a href="/pages/blog.html">BLOG</a></li> -->
               <li><a href="#contact">CONTACT</a></li>
-              <!-- <a
-                href="assets/Divine-Chidozie[Frontend-Dev].pdf"
-                class="nav-header-btn-container new-download"
-                download
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e3e3e3"
-                >
-                  <path
-                    d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
-                  />
-                </svg>
-                <span id="download-btn" class="resume-btn"
-                  >Download Resume</span
-                >
-              </a> -->
+
+              <li><a class="nav-list-items" href="#contact">CONTACT</a></li>
+
+              <a id="theme-btn" class="theme-btn" href="#">
+                <img src="images/colors.svg" class="color" alt="Color Image" />
+              </a>
             </ul>
+
+            <div id="show-theme-color" class="color-theme-container">
+              <p>SELECT THEME</p>
+              <ul class="color-theme">
+                <li id="golden" class="theme-color">Golden</li>
+                <li id="cyan" class="theme-color">Cyan</li>
+                <li id="purple" class="theme-color">Purple</li>
+                <li id="green" class="theme-color">Green</li>
+                <li id="rose" class="theme-color">Rose</li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
@@ -138,10 +157,11 @@
       <section id="home" data-aos="fade-down">
         <div class="hero-container">
           <div class="hero-inner-container">
-            <span class="span">Open to new 0pportunities</span>
-            <!-- <span>Remote Friendly</span>  : Remember to uncomment later and work on this code -->
+            <span id="open-new-opportunities" class="span"
+              >Open to new 0pportunities</span
+            >
             <span class="frontend-heading">Frontend Developer</span>
-            <h1 class="hero-heading">
+            <h1 id="hero-heading" class="hero-heading">
               <!-- Hi, I'm -->
               Divine Chidozie
               <!-- <span class="hero-inner-heading">Divine Chidozie</span> <br /> -->
@@ -177,7 +197,7 @@
       <!-- ===== About Section ===== -->
       <section id="education">
         <div class="about-section">
-          <h2 class="about-me-heading">About Me</h2>
+          <h2 id="about-me-heading" class="about-me-heading">About Me</h2>
           <p class="about-me-para">Building Solutions</p>
 
           <div class="about-content-image-link">
@@ -186,7 +206,10 @@
                 <li class="myself" id="myself-link">Myself</li>
                 <li class="education" id="education-link">Education</li>
                 <li class="skills" id="skills-link">
-                  <a id="skills-link-btn" href="pages/skills.html"
+                  <a
+                    class="technical-skills"
+                    id="skills-link-btn"
+                    href="pages/skills.html"
                     >Technical Skills</a
                   >
                 </li>
@@ -235,7 +258,7 @@
       <section id="projects">
         <div class="project-section" data-aos="fade-up" data-aos-delay="200">
           <div class="project-heading-para">
-            <h2 class="project-heading">PORTFOLIO</h2>
+            <h2 id="portfolio-heading" class="project-heading">PORTFOLIO</h2>
             <p class="featured-projects-para">Featured Projects</p>
             <p class="project-para">
               These projects showcase my ability to build responsive,
@@ -247,7 +270,7 @@
 
           <section class="projects-btn">
             <ul class="featured-project-container-btn">
-              <li class="project-btn active all">All</li>
+              <li id="all-project-btn" class="project-btn active all">All</li>
               <li class="project-btn internship">Internship</li>
               <li class="project-btn Personal">Personal</li>
               <li class="project-btn feature-project">Feature project</li>
@@ -479,9 +502,9 @@
         </div>
       </section>
 
-      <section class="edu-timeline-container">
+      <section id="journey" data-aos="fade-down" class="edu-timeline-container">
         <div class="edu-timeline">
-          <h3 class="time-line">timeline</h3>
+          <h3 id="time-line-heading" class="time-line">timeline</h3>
           <h2 class="professional-journey">Professional Journey</h2>
         </div>
 
@@ -492,17 +515,18 @@
             <!-- This div with class name edu-img is the inner container that contains the image -->
             <div class="edu-img">
               <!-- Rememeber to put the image of a gradute cap here -->
-              <img src="" alt="fix later." />
+              <img src="images/education.svg" alt="Image of School" />
             </div>
 
             <!-- This div with the class name edu-details is the inner container that contains the details -->
             <div class="edu-details">
-              <span class="year"
+              <span id="educationYear" class="year"
                 >2017 - 2023
                 <small class="school"
                   >University of Cross River, Calabar</small
                 ></span
               >
+
               <h4 class="course-of-study">BSc Computer Science</h4>
 
               <p class="study-description">
@@ -524,8 +548,13 @@
           <!-- ===== Expeience 1 ===== -->
           <div class="experience-item">
             <!-- Remember to add projects you have worked on here -->
+
+            <div class="experience-img">
+              <!-- Rememeber to put the image of a gradute cap here -->
+              <img src="images/education.svg" alt="Image of School" />
+            </div>
             <div class="experience-heading-span">
-              <span class="experience-date">2025</span>
+              <span id="experienceDate" class="experience-date">2025</span>
 
               <h3 id="ex-heading-1" class="experience-heading-3">
                 Frontend Developer -
@@ -562,8 +591,13 @@
 
           <!-- ===== Experience 2 ===== -->
           <div class="experience-item experience-2">
+            <div class="experience-img">
+              <!-- Rememeber to put the image of a gradute cap here -->
+              <img src="images/education.svg" alt="Image of School" />
+            </div>
+
             <div class="experience-heading-span">
-              <span class="experience-date">2026</span>
+              <span id="experienceDateTwo" class="experience-date">2026</span>
               <h3 id="ex-heading-2" class="experience-heading-3">
                 Frontend Developer Intern -
                 <span class="work-title">Trueminds Innovation Ltd</span>
@@ -677,7 +711,9 @@
       <section id="contact">
         <div class="contact-section" data-aos="zoom-in" data-aos-delay="400">
           <div class="contact-heading-para contact-heading-para-para">
-            <h4 class="contact-heading-small">GET IN TOUCH</h4>
+            <h4 id="get-in-touch-heading" class="contact-heading-small">
+              GET IN TOUCH
+            </h4>
             <h2 class="contact-heading">Let's Work Together</h2>
             <p class="contact-para">
               Have a project in mind or just want to explore possibilities? Send
@@ -800,18 +836,18 @@
           </div>
 
           <div class="footer-section-container">
-            <h4 class="links-heading">Quick Links</h4>
+            <h4 id="quick-link" class="links-heading">Quick Links</h4>
             <ul class="footer-list-items">
               <li><a href="#education">About Me</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="/pages/skills.html">Skills</a></li>
-              <li><a href="pages/blog.html">Blog</a></li>
+              <!-- <li><a href="pages/blog.html">Blog</a></li> -->
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="footer-section-container">
-            <h4 class="connect-heading">Stay Updated</h4>
+            <h4 id="stay-updated" class="connect-heading">Stay Updated</h4>
             <p class="connect-text">
               Subscribe to get updates on new projects and tech insights.
             </p>
@@ -838,7 +874,7 @@
                 />
               </a>
               <a
-                href="https://www.linkedin.com/in/divine-chidozie-48abb7363/"
+                href="linkedin.com/in/divine-chidozie-igwe-ebi-48abb7363"
                 target="_blank"
               >
                 <img
